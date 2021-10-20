@@ -31,6 +31,8 @@ There are releases available for ROS Hydro, Indigo and Kinetic. However, for the
 
 **NOTE**: please prefer using the binary release (see previous section) over building from source where possible. Source installs will not be automatically updated by new package releases and require more work to setup.
 
+**NOTE**: fork the git repo to your individiual repo.
+
 The following instructions assume that a [Catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) has been created at `$HOME/catkin_ws` and that the source space is at `$HOME/catkin_ws/src`. Update paths appropriately if they are different on the build machine.
 
 In all other cases the packages will have to be build from sources in a Catkin workspace: 
@@ -40,6 +42,9 @@ cd $HOME/catkin_ws/src
 
 # retrieve the sources (replace '$ROS_DISTRO' with the ROS version you are using)
 git clone -b $ROS_DISTRO-devel https://github.com/ros-industrial/universal_robot.git
+
+# instead use
+git clone -b $ROS_DISTRO-devel <your local repo address that you forked before>
 
 cd $HOME/catkin_ws
 
